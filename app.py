@@ -6,7 +6,7 @@ import textblob
 import google.generativeai as genai
 import os
 
-#api="AIzaSyCBMyRIaNPKMtvi0HEyr-jMuJjUCo6XABs"
+#api="XXXX"
 api=os.getenv("makersuite")
 genai.configure(api_key=api)
 model=genai.GenerativeModel("gemini-1.5-flash")
