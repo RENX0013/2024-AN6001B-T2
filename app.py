@@ -37,6 +37,10 @@ def SA_result():
 def GAI(): 
     return(render_template("GAI.html"))
 
+@app.route("/paynow",methods=["GET","POST"])
+def paynow(): 
+    return(render_template("paynow.html"))
+
 @app.route("/GAI_result",methods=["GET","POST"])
 def GAI_result(): 
     q = request.form.get("q")
